@@ -1,0 +1,5 @@
+
+> careerpilot-ai-server@1.0.0 dev
+> tsx watch src/server.ts
+
+3:22:21 pm [tsx] change in ./src\config\supabase.ts Rerunning...

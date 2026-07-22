@@ -1,0 +1,46 @@
+C:\Users\saide\Downloads\project\node_modules\@supabase\realtime-js\src\lib\websocket-factory.ts:178
+    throw new Error(errorMessage)
+          ^
+
+
+Error: Node.js 20 detected without native WebSocket support.
+
+Suggested solution: For Node.js < 22, install "ws" package and provide it via the transport option:
+import ws from "ws"
+new RealtimeClient(url, { transport: ws })
+    at Function.getWebSocketConstructor (C:\Users\saide\Downloads\project\node_modules\@supabase\realtime-js\src\lib\websocket-factory.ts:178:11)
+    at RealtimeClient._initializeOptions (C:\Users\saide\Downloads\project\node_modules\@supabase\realtime-js\src\RealtimeClient.ts:805:63)
+    at new RealtimeClient (C:\Users\saide\Downloads\project\node_modules\@supabase\realtime-js\src\RealtimeClient.ts:284:39)
+    at SupabaseClient._initRealtimeClient (C:\Users\saide\Downloads\project\node_modules\@supabase\supabase-js\dist\index.mjs:839:10)
+    at new SupabaseClient (C:\Users\saide\Downloads\project\node_modules\@supabase\supabase-js\dist\index.mjs:674:24)
+    at createClient (C:\Users\saide\Downloads\project\node_modules\@supabase\supabase-js\dist\index.mjs:872:9)
+    at <anonymous> (C:\Users\saide\Downloads\project\server\src\config\supabase.ts:4:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v20.19.5
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Users\saide\Downloads\project\node_modules\express\lib\application.js:635:24)
+    at <anonymous> (C:\Users\saide\Downloads\project\server\src\server.ts:4:5)
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+
+Node.js v20.19.5
